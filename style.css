@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Inter", sans-serif;
 }
@@ -46,16 +50,23 @@ nav {
     background-color: #021526;
     height: 4rem;
     z-index: 100;
+    box-shadow: 2px 2px 2px 2px #021526;
 }
 
 nav .links a {
     text-decoration: none;
     color: #ffffff;
     margin: 50px;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-family: "Poppins";
     border-bottom: 1px solid #00000000;
     font-weight: 0;
+    font-family: "Inter", sans-serif;
+    transition: 0.1s ease;
+}
+
+nav .links a:hover {
+    color: #E2E2B6;
 }
 
 header {
@@ -109,11 +120,14 @@ header div img {
 .card {
     height: 30rem;
     width: 30rem;
-    box-shadow: 5px 5px 5px 5px #6EACDA;
+    box-shadow: 4px 4px 4px 4px #6EACDA;
+    border-radius: 10px;
 }
 
 .card img {
     width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .card .judul {
@@ -156,12 +170,14 @@ header div img {
 .colom {
     height: auto;
     width: 80%;
-    border: solid #03346E;
+    border: solid 2px #03346E;
+    border-radius: 5px;
 }
 
 .colom h2 {
     font-weight: 400;
     margin: 30px;
+    letter-spacing: 0.8px;
 }
 
 .imgnyt {
@@ -172,11 +188,14 @@ header div img {
 .imgnyt img {
     width: 40vw;
     height: 50vh;
+    border-radius: 15px;
+    min-width: 28rem;
 }
 
 .deskripsinyata {
     text-align: left;
     margin-top: 50px;
+    font-size: 20px;
 }
 
 .showdetail {
@@ -185,9 +204,14 @@ header div img {
 }
 
 .showdetail a {
-    font-size: 30px;
+    font-size: 20px;
     text-decoration: none;
     color: #021526;
+    transition: 0.1s ease;
+}
+
+.showdetail a:hover{
+    font-weight: bold;
 }
 
 footer {
@@ -197,11 +221,10 @@ footer {
     height: 5rem;
 }
 
-footer h4 {
-    padding-top: 3.5rem;
+footer h3 {
+    padding-top: 2rem;
     color: #ffffff;
-    font-weight: 400;
-    opacity: 0.5;
+    font-weight: 100;
 }
 
 @media (max-width: 995px) {
