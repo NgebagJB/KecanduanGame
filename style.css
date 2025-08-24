@@ -127,6 +127,11 @@ header div img {
     width: 30rem;
     box-shadow: 4px 4px 4px 4px #6EACDA;
     border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card img {
