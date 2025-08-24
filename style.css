@@ -28,6 +28,7 @@ hr {
 
 .judul {
     width: 75%;
+    font-weight: 600;
 }
 
 .bio {
@@ -51,6 +52,10 @@ nav {
     height: 4rem;
     z-index: 100;
     box-shadow: 2px 2px 2px 2px #021526;
+}
+
+nav .versihape {
+    display: none;
 }
 
 nav .links a {
@@ -152,12 +157,27 @@ header div img {
     text-align: left;
 }
 
-.card .icon1 {background-image: url(images/IconGangguanKesehatanMental.png);  background-size: 4.8rem}
-.card .icon2 {background-image: url(images/iconGangguanSosial.png);           background-size: 4.6rem}
-.card .icon3 {background-image: url(images/iconGangguanAkademik.png);         background-size: 4.2rem}
-.card .icon4 {background-image: url(images/iconGangguanFisik.png);            background-size: 5.4rem}
+.card .icon1 {
+    background-image: url(images/IconGangguanKesehatanMental.png);
+    background-size: 4.8rem
+}
 
-.daftarcard2{
+.card .icon2 {
+    background-image: url(images/iconGangguanSosial.png);
+    background-size: 4.6rem
+}
+
+.card .icon3 {
+    background-image: url(images/iconGangguanAkademik.png);
+    background-size: 4.2rem
+}
+
+.card .icon4 {
+    background-image: url(images/iconGangguanFisik.png);
+    background-size: 5.4rem
+}
+
+.daftarcard2 {
     width: 90%;
 }
 
@@ -169,7 +189,7 @@ header div img {
 
 .colom {
     height: auto;
-    width: 80%;
+    width: 90%;
     border: solid 2px #03346E;
     border-radius: 5px;
 }
@@ -177,7 +197,7 @@ header div img {
 .colom h2 {
     font-weight: 400;
     margin: 30px;
-    letter-spacing: 0.8px;
+    text-align: justify;
 }
 
 .imgnyt {
@@ -189,7 +209,7 @@ header div img {
     width: 40vw;
     height: 50vh;
     border-radius: 15px;
-    min-width: 28rem;
+    min-width: 20rem;
 }
 
 .deskripsinyata {
@@ -210,7 +230,7 @@ header div img {
     transition: 0.1s ease;
 }
 
-.showdetail a:hover{
+.showdetail a:hover {
     font-weight: bold;
 }
 
@@ -228,15 +248,67 @@ footer h3 {
 }
 
 @media (max-width: 995px) {
-  nav {
-    display: none;
-  }
+    nav .links {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        background-color: #021526;
+        margin-top: 38rem;
 
-  header {
-    padding-top: 0rem;
-  }
+        transform: translateX(-100%);
+        transition: 0.3s ease;
+    }
 
-  .textheader h1 {
-    font-size: 3rem;
-  }
+    nav .links.active {
+        transform: translateX(0);
+    }
+
+    nav .versihape {
+        display: block;
+    }
+
+    .versihape {
+        width: 50%;
+        color: #ffffff;
+        text-align: right;
+        margin-right: 20px;
+    }
+
+    .versihape span {
+        font-size: 40px;
+    }
+
+    .textheader h1 {
+        font-size: 3rem;
+    }
+
+    .imgnyt img {
+        height: 30vh;
+    }
+
+    header div img {
+        height: 15rem
+    }
+
+    .textheader {
+        margin-top: -12rem;
+    }
+
+    .textheader h1 {
+        font-size: 2rem;
+    }
+
+    .textheader h2 {
+        font-size: 1rem;
+    }
+
+    .mengenal {
+        margin-top: -22rem;
+    }
+
+    .card .icon {
+        height: 16%;
+        width: 26%;
+    }
 }
